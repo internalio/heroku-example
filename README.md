@@ -36,7 +36,7 @@ heroku auth:login
 ```
 3. Run the installation script:
 
-This will create a new project called `internalio` and deploy Internal OnPrem.
+This script will prompt you to choose a project name and deploy Internal OnPrem.
 ```
 ./install.sh
 ```
