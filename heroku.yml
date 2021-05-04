@@ -1,0 +1,26 @@
+build:
+  docker:
+    web: Dockerfile
+setup:
+  addons:
+  - plan: heroku-postgresql
+    as: INTERNALIO_API_DATABASE
+  - plan: heroku-postgresql
+    as: INTERNALIO_CONNECTOR_DATABASE
+  config:
+    INTERNALIO_LICENSE_KEY: license
+    INTERNALIO_SECRET_KEY: secret
+    INTERNALIO_CONNECTOR_SECRET_KEY: secret
+    INTERNALIO_EMAIL_HOST: smtp.local
+    INTERNALIO_EMAIL_HOST_USER: smtp_user
+    INTERNALIO_EMAIL_HOST_PASSWORD: smtp_password
+    INTERNALIO_EMAIL_PORT: 25
+    INTERNALIO_EMAIL_USE_TLS: true
+    INTERNALIO_FROM_EMAIL_ADDRESS: Internal OnPrem <noreply@smtp.local>
+    INTERNALIO_BASE_URI: http://internal.local
+    INTERNALIO_DOMAIN: internal.local
+    INTERNALIO_INSECURE_COOKIES: false
+release:
+  image: web
+  command:
+    - /usr/local/bin/release
