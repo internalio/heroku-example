@@ -5,16 +5,19 @@ An example deployment of Internal OnPrem using Heroku
 ## Prerequisites
 
 - Heroku CLI
+
 Install the Standalone Heroku CLI using the command below:
 ```
 curl https://cli-assets.heroku.com/install.sh | sh
 ```
 - Heroku CLI beta branch
+
 This deployment makes use of the Heroku manifest addon and requires the beta version of the Heroku CLI.
 ```
 heroku update beta
 ```
 - Heroku Manifest Plugin
+
 In order to deploy the Internal OnPrem project, the manifest addon must be installed.
 ```
 heroku plugins:install @heroku-cli/plugin-manifest
@@ -28,6 +31,7 @@ $ heroku -v
 heroku/7.53.0-beta.4ef8f36 ...
 ```
 2. Run the installation script:
+
 This will create a new project called `internalio` and deploy Internal OnPrem.
 ```
 ./install.sh
