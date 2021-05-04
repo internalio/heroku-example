@@ -30,7 +30,11 @@ heroku plugins:install @heroku-cli/plugin-manifest
 $ heroku -v
 heroku/7.53.0-beta.4ef8f36 ...
 ```
-2. Run the installation script:
+2. Authenticate via the Heroku CLI:
+```
+heroku auth:login
+```
+3. Run the installation script:
 
 This will create a new project called `internalio` and deploy Internal OnPrem.
 ```
