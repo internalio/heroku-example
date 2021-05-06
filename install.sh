@@ -11,9 +11,6 @@ heroku update beta
 # Install manifest plugin
 heroku plugins:install @heroku-cli/plugin-manifest
 
-# Create internalio project
-heroku create $projectName --manifest
-
 # Set config variables
 apiSecret=$(openssl rand -base64 40 | tr -d /=+ | cut -c -50)
 connectorSecret=$(openssl rand -hex 32)
