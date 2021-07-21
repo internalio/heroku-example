@@ -57,7 +57,7 @@ INTERNALIO_CONNECTOR_SECRET_KEY=...
 ## Configure License Key
 In your Heroku `internalio` project, ensure that the `INTERNALIO_LICENSE_KEY` Config Var is configured correctly before attempting to access Internal OnPrem.
 
-## Upgrading
+## Upgrading to a Newer Version
 1. Fork this repository.
 1. Set the version number that you wish to upgrade to in the `Dockerfile` in this repository:
 ```
