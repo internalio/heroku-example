@@ -61,7 +61,7 @@ In your Heroku `internalio` project, ensure that the `INTERNALIO_LICENSE_KEY` Co
 1. Fork this repository.
 1. Set the version number that you wish to upgrade to in the `Dockerfile` in this repository:
 ```
-FROM internalio/onprem:2.10.0    # Current version as of 2021-07-20
+FROM internalio/onprem:2.11.0    # Current version as of 2021-08-02
 ```
 
 2. Commit and push the changes to heroku:
@@ -82,15 +82,15 @@ remote: === Fetching app code
 remote:
 remote: === Building release (Dockerfile)
 remote: Sending build context to Docker daemon  9.728kB
-remote: Step 1/4 : FROM internalio/onprem:2.10.0
-remote: 2.10.0: Pulling from internalio/onprem
+remote: Step 1/4 : FROM internalio/onprem:2.11.0
+remote: 2.11.0: Pulling from internalio/onprem
 remote: a31c7b29f4ad: Pulling fs layer
 
 ...[output snipped]...
 
 remote: e020d13e8a78: Pull complete
 remote: Digest: sha256:cc5f38f4b6ff5aca5c3273784d93ed005188d893a09141e8fc41b150d43889b4
-remote: Status: Downloaded newer image for internalio/onprem:2.10.0
+remote: Status: Downloaded newer image for internalio/onprem:2.11.0
 remote:  ---> 1e5f33c30558
 remote: Step 2/4 : ADD entrypoint.sh /usr/local/bin/entrypoint
 remote:  ---> f584672e66db
